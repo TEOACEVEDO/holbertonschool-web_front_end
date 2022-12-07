@@ -83,7 +83,7 @@ a:active {
 
 .section-header {
     text-align: var(--section-header-align);
-    padding: var(--section-header-align);
+    padding: var(--section-header-padding);
 }
 
 .section-body {
@@ -92,7 +92,7 @@ a:active {
 
 .section-footer {
     padding: var(--section-footer-padding);
-    text-align: var(--footer-padding);
+    text-align: var(--section-footer-align);
 }
 
 .section-title {
