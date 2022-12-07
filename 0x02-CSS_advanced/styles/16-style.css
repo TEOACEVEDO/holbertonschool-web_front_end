@@ -92,5 +92,6 @@ a:active {
 
 .container {
     width: 960px;
-    margin: 50 auto auto 50;
+    margin-right: auto;
+    margin-left: auto;
 }
