@@ -70,10 +70,14 @@ body {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
-
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
@@ -81,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 a:link {
     color: var(--text-color);
     text-decoration: none;
-  }
+}
 
 a:visited {
     font-style: italic;
@@ -108,15 +112,16 @@ a:active {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
   }
-
 
 .visually-hidden {
     display: none;
-  }
+}
 
 .card-category {
-    color: var(--color-primary)
+    color: var(--color-primary);
 }
 
 .section {
@@ -155,8 +160,8 @@ a:active {
 
 .container {
     width: 960px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
@@ -248,21 +253,21 @@ ul.row {
 
 .card-services .card-title {
     margin: 0;
-  }
-  
-  .card-services .a {
+}
+
+.card-services .a {
     display: block;
     padding: 2rem;
     background-color: var(--color-light-grey);
-  }
-  
-  .card-services .a:hover {
+}
+
+.card-services .a:hover {
     color: var(--color-white);
     background-color: var(--color-primary);
     text-decoration: none;
-  }
+}
 
-  .card-testimonial {
+.card-testimonial {
     text-align: center;
 }
 
@@ -313,6 +318,7 @@ ul.row {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
@@ -320,7 +326,7 @@ ul.row {
     width: 100%;
   }
 
-  .card-work .card-outer {
+.card-work .card-outer {
     position: relative;
     overflow: hidden;
 }
@@ -338,6 +344,7 @@ ul.row {
     left: -0.1rem;
     right: -0.1rem;
     z-index: 1;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-inner {
@@ -370,8 +377,8 @@ ul.row {
   .card-work:hover .card-title {
     opacity: 1;
   }
-  
- .card-testimonial .card-quote {
+
+  .card-testimonial .card-quote {
     position: relative;
   }
 
